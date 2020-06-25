@@ -1,12 +1,8 @@
 // Code SimplerComponent Here
 
-import { ProgressPlugin } from "webpack";
+import React from 'react'
 
-export default function SimplerComponent() {
+export default function SimplerComponent(props) {
 
-    const handleClick = () => {
-        console.log("hi!")
-    }
-
-    return(<div onClick={handleClick}>I am just happy</div>)
+    return(<div onClick={props.handleClick}>I am just happy</div>)
 }
